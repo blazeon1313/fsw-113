@@ -36,7 +36,9 @@ let goBtn = document.getElementById("print");
 
 function printCalendar(){
 
-const today = new Date (`${calMonths.value} ${yearSel.value}`);
+// wrong input for for month select 
+// const today = new Date (`${calMonths.value} ${yearSel.value}`);
+const today = new Date (`${monthSel.value}/1/${yearSel.value}`);
 const month = today.getMonth()
 let days
 switch (month) {
@@ -51,7 +53,7 @@ switch (month) {
         break
     default:
         days = 31
-}
+} 
     
 let x
 const weekday = today.getDay()
