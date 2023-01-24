@@ -1,0 +1,114 @@
+/* 
+    Create all the style definitions necessary to make your app look as close 
+    to the example as possible. You will need to use display:grid to make the 
+    bug reports display in three columns (see week 4).
+*/
+* {
+    background-image: url(./images/wallpaper.jpg);
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+#reportWrapper {
+    display: grid;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    width: 25%;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+#topbar {
+    display: flex;
+    background-image: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#reportedByDiv,
+#bugDescrDiv {
+    margin: auto;
+}
+
+#reportedBy,
+#system,
+#subSystem,
+#bugDesc {
+    background-image: none;
+    background-color: lightgrey;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+#bttnDiv {
+    margin-top: 0px;
+    width: 90%;
+}
+
+#resetBtn, 
+#submitBtn {
+    background-image: none;
+    background-color: red;
+    color: white;
+    padding: 2px;
+    margin: 2px;
+    font-size: 15px;
+}
+
+#listWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid lightgrey;
+    margin: auto;
+    width: 50%;
+    border-radius: 8px;
+}
+
+div,
+p {
+    background-image: none;
+}
+
+.reportDiv {
+    background-color: lightgrey;
+    height: 13rem;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.buttonBox {
+    justify-self: baseline;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+.content{
+    background-color: transparent;
+    display: flex;
+}
+.solvedBtn {
+    width: 25px;
+    background-color: red;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+.delBtn {
+    width: 22px;
+    background-color: red;
+    border-radius: 25px;
+    text-align: center;
+    color: white
+}
+.solvedBtn {
+    color: white;
+    background-color: red;
+    border-radius: 25px;
+}
+
+
